@@ -1,4 +1,4 @@
 build/
 dist/
 !.gitignore
-
+private.properties
