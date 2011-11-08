@@ -20,8 +20,8 @@ public class ConversionImpl implements Conversion {
 
     @Override
     public double celciusToKelvin(double celciusTemp) {
-//        return (celciusTemp + 273.15);
-        return 273.15;
+        return (celciusTemp + 273.15);
+//        return 273.15;
     }
     
 }
