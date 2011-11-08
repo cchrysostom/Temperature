@@ -20,7 +20,7 @@ public class ConversionImpl implements Conversion {
 
     @Override
     public double celciusToKelvin(double celciusTemp) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return (celciusTemp + 273.15);
     }
     
 }
