@@ -20,6 +20,7 @@ public class ConversionImplTest {
      * For your information:
      * [°C] = ([°F] - 32) × 5/9
      * [°F] = [°C] × 9/5 + 32
+     * [Kelvin] = [°C] + 273.15
      */
 
     @Test
@@ -38,5 +39,14 @@ public class ConversionImplTest {
         double expResult = 212.0;
         double result = instance.celciusToFahrenheit(celciusTemp);
         assertEquals(expResult, result, 0.01);
+    }
+    
+    @Test
+    public void testCelciusToKelvin() {
+        double celciusTemp = 45.0;
+        ConversionImpl instance = new ConversionImpl();
+        double expResult = 318.15;
+        double result = instance.celciusToKelvin(celciusTemp);
+        assertEquals(expResult, result, 0.01);        
     }
 }

@@ -17,5 +17,10 @@ public class ConversionImpl implements Conversion {
     public double celciusToFahrenheit(double celciusTemp) {
         return (celciusTemp * (9.0/5.0)) + 32.0;
     }
+
+    @Override
+    public double celciusToKelvin(double celciusTemp) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
     
 }
